@@ -33,5 +33,55 @@ font-size: 32px;
 }
 
 .botao{
+    font-family: "Chakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+    }
     
+    .botao:first-child{
+    border-radius: 40px 40px 0 0;
+    }
+    
+    .botoes{
+    display: block;
+    }
+    
+    .abas-textos{
+        background-color: var(--texto-de-fundo);
+        padding: 40px;
+    }
+
+    .aba-conteudos-titulo-pricipal{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .aba-conteudos-titulo-sencundario{
+        text-align: center;
+        color: var(--verde);
+        text-transform: uppercase;
+    }
+    @media screen and (min-width: 768px){
+.botoes{
+    display: flex;
 }
+
+.botao:first-child{
+    border-radius: 40px 000;
+}
+   
+.botao:lest-child{
+    border-radius: 0 40px 00;
+}
+        
+}  
