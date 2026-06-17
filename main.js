@@ -1,4 +1,50 @@
 const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
 
-
+for(let j=0;j<botoes.length;i++){
+    botoes[i].onclick = function(){
     
+        for(let j=0;j<botoes.length;i++){
+    botoes[j].classList.remove("ativo");
+    textos[j].classList.remove("ativo");
+}
+
+botoes[j].classList.add("ativo");
+textos[j].classList.add("ativo");
+   
+}
+ }
+ const contadores = document.querySelectorAll("contador");
+ const tempoObejetivo1 = new Date("2024-10-05T00:00:00");
+const tempoObejetivo2 = new Date("2024-12-05T00:00:00");
+ const tempoObejetivo3 = new Date("2024-12-30T00:00:00");
+ const tempoObejetivo4 = new Date("2024-02-01T00:00:00");
+
+ const tempos = [tempoObejetivo1,tempoObejetivo2, tempoObejetivo3, tempoObejetivo4];
+
+
+
+ function calculatempo(tempoObejetivo) {
+    let tempoAtual = new Date();
+    let tempoFinal = tempoObejetivo - tempoAtual;
+    let segundos = Math.floor(tempoFinal / 1000);
+    let minutos = Math.floor(segundos / 60);
+    let horas = Math.floor(minutos / 60);
+    let dias = Math.floor(horas / 24);
+
+    segundos %=60;
+    minutos %=60;
+    horas %=24;
+
+    if (tempoFinal >0){
+        return[dias,horas,minutos,segundos];
+    } else{
+        return[0,0,0,0,];
+    }
+ }
+
+ function atualizaCronometro(){
+for(let i=0;i<contadores.length;i++{
+    
+}
+ }
