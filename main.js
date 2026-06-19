@@ -44,7 +44,17 @@ const tempoObejetivo2 = new Date("2024-12-05T00:00:00");
  }
 
  function atualizaCronometro(){
-for(let i=0;i<contadores.length;i++{
+for(let i=0;i<contadores.length;i++){
+document.getElementById("dias"=i).textContent = calculatempo(tempos[i])[0];
+document.getElementById("horas"=i).textContent = calculatempo(tempos[i])[1];
+document.getElementById("min"=i).textContent = calculatempo(tempos[i])[2];
+document.getElementById("seg"=i).textContent = calculatempo(tempos[i])[3];
     
 }
  }
+
+ function atualizaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro,1000)
+ }
+ comecaCronometro();
